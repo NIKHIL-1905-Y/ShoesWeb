@@ -279,7 +279,7 @@ section .main .button:hover i{
 
 .about{
     width:100%;
-    height: 52vh;
+    height: 100vh;
     padding: 35px 0;
     /* background:#999999; */
 }
@@ -315,7 +315,8 @@ section .main .button:hover i{
 
 .about .about_main .about_image{
     display: flex;
-    margin-top: 300px;
+    margin-top: 20px;
+    gap: 20px;
 }
 
 
@@ -348,12 +349,12 @@ section .main .button:hover i{
 .about .about_main .image_container img{
          border: 3px solid #c72092;
          border-radius: 20px;
-         height: 430px;
+         height: 300px;
          padding: 30px;
          box-shadow: 0 0 8px #c72092;
 }
 .about .about_main .about_text{
-    margin-top:20px;
+    margin-top:10px;
 }
 
 .about .about_main .about_text p{
@@ -361,7 +362,7 @@ section .main .button:hover i{
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
     line-height: 22px;
-    width: 600px;
+    width: 650px;
     text-align: justify;
     padding: 25px 30px;
     border: 2px solid #c72092;
@@ -374,8 +375,8 @@ section .main .button:hover i{
     color: black;
     background: none;
     position: relative;
-    top: -100%;
-    left: 50%;
+    
+    left: 42%;
     transform: translate(-50%,-50%);
     padding: 10px 25px;
     border: 2px solid #c72092;
@@ -389,4 +390,95 @@ section .main .button:hover i{
     border: 2px solid transparent;
     background: #c72092;
     color: whitesmoke;
+}
+
+/* Review */
+
+.review{
+    width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+}
+
+.review h1{
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.review h1 span{
+    background:linear-gradient(to left,#c72092,#6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15px;
+}
+
+.review .review_box{
+    width: 95%;
+    
+    display: grid;
+    margin-left: 35px;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.review .profile .profile_image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5px 0;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+    cursor: pointer;
+    transition: 1s;
+}
+.review .profile .profile_image:hover{
+    transform: scale(1.2);
+}
+.review .profile_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.review .profile{
+    display: flex;
+    align-items: center;
+}
+
+.review .review_box .review_card{
+    width: 400px;
+    background: #f3f1f1;
+    padding: 20px 25px;
+    border-radius: 5px;
+    margin: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+}
+.review .review_box .review_card .card_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.review .review_box .review_card .card_top .profile .name{
+    margin-left: 20px;
+    line-height: 22px;
+}
+.review .review_box .review_card .card_top .profile .name{
+    font-size: 20px;
+}
+
+.review .review_box .review_card .card_top .profile .name .like{
+    color: orange;
+    
+    font-size: 12px;
+}
+
+.review .review_box .review_card .comment p{
+    text-align: justify;
+    line-height: 22px;
+    margin-top: 15px;
 }
